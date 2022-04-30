@@ -74,13 +74,13 @@ export const fetcher = (...args) => fetch(...args).then((res) => res.json());
 export const renderProviderText = (account) => {
   if (account && account.address) {
     const providerTextList = {
-      Metamask: 'Add to Metamask',
-      imToken: 'Add to imToken',
-      Wallet: 'Add to Wallet',
+      Metamask: 'Adicionar na Metamask',
+      imToken: 'Adiconar na imToken',
+      Wallet: 'Adicionar na Wallet',
     };
     return providerTextList[getProvider()];
   } else {
-    return 'Connectar wallet';
+    return 'Conectar wallet';
   }
 };
 
