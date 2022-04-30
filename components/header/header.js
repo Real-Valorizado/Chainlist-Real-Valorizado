@@ -244,7 +244,7 @@ function Header(props) {
           <div className={`${classes.accountIcon} ${classes[renderProviderLogo()]}`}></div>
         )}
         <Typography variant="h5">
-          {account && account.address ? formatAddress(account.address) : 'Connectar Wallet'}
+          {account && account.address ? formatAddress(account.address) : 'Conectar Wallet'}
         </Typography>
       </Button>
     </div>
