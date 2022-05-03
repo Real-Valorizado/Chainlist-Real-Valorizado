@@ -12,9 +12,11 @@ import Image from 'next/image'
 
 import indigo from '@material-ui/core/colors/indigo';
 import blue from '@material-ui/core/colors/blue';
+import red from '@material-ui/core/colors/red';
+import deepOrange from '@material-ui/core/colors/deepOrange';
 
 
-const accent = blue[700]; // #304ffe
+const accent = red[700]; // #304ffe
 
 const styles = {
     root: {
@@ -27,6 +29,9 @@ const styles = {
         marginLeft: -12,
         marginRight: 20,
     },
+    navbarblue: {
+        backgroundColor: '#0528f2',
+    },
 };
 
 function ResponsiveAppBar(props) {
@@ -34,7 +39,7 @@ function ResponsiveAppBar(props) {
     return (
         <div className={classes.root}>
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar className={classes.navbarblue} >
                     <IconButton className={classes.menuButton} color="accent" aria-label="Menu">
                         <div className={classes.logo}>
                             <Link href="https://realvalorizado.com.br">
@@ -66,7 +71,7 @@ function ResponsiveAppBar(props) {
                     </Button>
                 </Toolbar>
             </AppBar>
-        </div>
+        </div >
     );
 }
 
