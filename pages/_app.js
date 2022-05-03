@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import ResponsiveAppBar from '../components/navbar'
 
 import SnackbarController from '../components/snackbar';
 
@@ -56,14 +57,16 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={themeConfig}>
-        <CssBaseline />
-        <Component {...pageProps} changeTheme={changeTheme} />
-        <SnackbarController />
-      </ThemeProvider>
-
-    </QueryClientProvider>
+    <>
+      <ResponsiveAppBar />
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={themeConfig}>
+          <CssBaseline />
+          <Component {...pageProps} changeTheme={changeTheme} />
+          <SnackbarController />
+        </ThemeProvider>
+      </QueryClientProvider>
+    </>
   );
 }
 

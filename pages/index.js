@@ -96,18 +96,7 @@ function Home({ changeTheme, theme, sortedChains }) {
           <div className={classes.copyContainer}>
 
             <div className={classes.copyCentered}>
-              <div className={classes.logo}>
-                <Link href="https://realvalorizado.com.br">
-                  <a>
-                    <Image
-                      src="/real-valorizado-logo-blue.png"
-                      alt="Logo Real Valorizado"
-                      width="232"
-                      height="75"
-                    />
-                  </a>
-                </Link>
-              </div>
+
 
 
 
