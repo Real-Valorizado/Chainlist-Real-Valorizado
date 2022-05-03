@@ -6,17 +6,16 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 import Link from 'next/link';
 import Image from 'next/image'
 
-import indigo from '@material-ui/core/colors/indigo';
-import blue from '@material-ui/core/colors/blue';
+
 import red from '@material-ui/core/colors/red';
-import deepOrange from '@material-ui/core/colors/deepOrange';
 
 
-const accent = red[700]; // #304ffe
+
+
 
 const styles = {
     root: {
@@ -26,7 +25,7 @@ const styles = {
         flexGrow: 1,
     },
     menuButton: {
-        marginLeft: -12,
+        marginLeft: 12,
         marginRight: 20,
     },
     navbarblue: {
@@ -40,7 +39,7 @@ function ResponsiveAppBar(props) {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar className={classes.navbarblue} >
-                    <IconButton className={classes.menuButton} color="accent" aria-label="Menu">
+                    <IconButton className={classes.menuButton} aria-label="Menu">
                         <div className={classes.logo}>
                             <Link href="https://realvalorizado.com.br">
                                 <a>
