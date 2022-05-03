@@ -39,24 +39,17 @@ function ResponsiveAppBar(props) {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar className={classes.navbarblue} >
-                    <IconButton className={classes.menuButton} aria-label="Menu">
-                        <div className={classes.logo}>
-                            <Link href="https://realvalorizado.com.br">
-                                <a>
-                                    <Image
-                                        src="/real-valorizado-logo.png"
-                                        alt="Logo Real Valorizado"
-                                        width="156"
-                                        height="50"
-                                    />
-                                </a>
-                            </Link>
-                        </div>
-                    </IconButton>
+
                     <Typography variant="button" color="inherit" className={classes.grow}>
                         <Link href="https://realvalorizado.com.br">
                             <a>
-                                Ferramentas
+                                <svg version="1.1" width="12" height="12" viewBox="0 0 24 24">
+                                    <path
+                                        fill={'#ffff'}
+                                        d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+                                    />
+                                </svg>
+                                {' '}Voltar para Ferramentas
                             </a>
                         </Link>
                     </Typography>
