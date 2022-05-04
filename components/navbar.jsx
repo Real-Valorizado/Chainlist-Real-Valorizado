@@ -5,16 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-
 import Link from 'next/link';
-import Image from 'next/image'
-
-
-import red from '@material-ui/core/colors/red';
-
-
-
 
 
 const styles = {
@@ -41,11 +32,11 @@ function ResponsiveAppBar(props) {
                 <Toolbar className={classes.navbarblue} >
 
                     <Typography variant="button" color="inherit" className={classes.grow}>
-                        <Link href="https://realvalorizado.com.br">
+                        <Link href="https://ferramentas.realvalorizado.com.br">
                             <a>
                                 <svg version="1.1" width="12" height="12" viewBox="0 0 24 24">
                                     <path
-                                        fill={'#ffff'}
+                                        fill={'#fff'}
                                         d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
                                     />
                                 </svg>
